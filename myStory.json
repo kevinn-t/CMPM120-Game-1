@@ -1,0 +1,145 @@
+{
+    "Title": "!Robbery",
+    "Credits": "Created by Kevin Tan (ktan44@ucsc.edu).",
+    "InitialLocation": "Attic",
+    "Rooms": {
+        "Attic": {
+            "Body": "Climbing through the window, you find yourself in the attic. Swatting away dust and cobwebs you find the attic ladders.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Climb down.",
+                    "Target": "North Hallway"
+                }
+            ]
+        },
+        "North Hallway": {
+            "Body": "You find yourself in North-facing hallway continuing to the West.<br><br>",
+            "Choices": [
+                {
+                    "Text": "At corner is a set of stairs.",
+                    "Target": "Stairs"
+                },
+                {
+                    "Text": "At the north end is the master bedroom.",
+                    "Target": "Master Bedroom"
+                },
+                {
+                    "Text": "Turn down the hallway West",
+                    "Target": "West Hallway"
+                }
+
+            ]
+        },
+        "Stairs": {
+            "Body": "Looking down the stairway, you remember everything you want is up here.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Continue down the hallway West",
+                    "Target": "West Hallway"
+                },
+                {
+                    "Text": "Continue down the hallway North",
+                    "Target": "North Hallway"
+                }
+            ]
+        },
+        "West Hallway": {
+            "Body": "Moonlight spills through a single window at the end illuminating a door to another bedroom.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Enter bedroom",
+                    "Target": "Bedroom"
+                },
+                {
+                    "Text": "Go back North",
+                    "Target": "North Hallway"
+                },
+                {
+                    "Text": "Go downstairs instead",
+                    "Target": "Stairs"
+                }
+            ]
+        },
+        "Bedroom": {
+            "Body": "The bedroom is bright and lively. A door to the right connects it to its own bathroom.<br>There's a bunch of maps decorating the walls. At the center of a table is a globe.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Enter bathroom",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "Approach globe",
+                    "Target": "Mechanism"
+                },
+                {
+                    "Text": "Exit bedroom",
+                    "Target": "West Hallway"
+                }
+            ]
+        },
+        "Mechanism":{
+            "Body": "On the arm of the globe is a pointer, landing on North America.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Spin it",
+                    "Target": "Mechanism"
+                },
+                {
+                    "Text": "Leave it alone",
+                    "Target": "Bedroom"
+                }
+            ]
+        },
+        "Bathroom": { 
+            "Body": "The sink is a mess. There are makeup and skincare products covering the counter. Amid the mess, you notice a set of keys.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Grab the keys",
+                    "Target": "Take Keys"
+                },
+                {
+                    "Text": "Head back out into the hallway",
+                    "Target": "West Hallway"
+                }
+            ]
+        },
+        "Take Keys":{
+            "Body": "Grabbing the keys, you have no more business in here.",
+            "Choices": [
+                {  
+                    "Text": "Head back out into the hallway",
+                    "Target": "West Hallway"
+                }
+            ]
+        },
+        "Master Bedroom": {
+            "Body": "It would have looked more spacious had it been clean. Your drawer sits in the corner locked. You also spot a bathroom to the side.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Check the bathroom for keys",
+                    "Target": "Master Bathroom"
+                },
+                {
+                    "Text": "Exit into the hallway",
+                    "Target": "North Hallway"
+                }
+            ]
+        },
+        "Master Bathroom": {
+            "Body": "Everything looks brand new as if it's hardly used. There's nothing of notice here.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Go back into the bedroom",
+                    "Target": "Master Bedroom"
+                },
+                {
+                    "Text": "Exit into the hallway",
+                    "Target": "North Hallway"
+                }
+            ]
+        },
+        "End": {
+            "Body": "With the drawer unlocked, you take out the key and quickly make a mold. You got what you came for.<br><br>"
+        }
+    }
+}
